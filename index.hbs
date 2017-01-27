@@ -1,0 +1,11 @@
+{{!< default}}
+
+<main role="main">
+
+{{#foreach posts}}
+  {{> "post-full"}}
+  <hr class="post-separator"/>
+{{/foreach}}
+
+{{pagination}}
+</main>
