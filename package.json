@@ -1,0 +1,15 @@
+{
+  "name": "Ristretto",
+  "version": "1.0.0",
+  "description": "Minimalist, caffeinated ghost theme.",
+  "respository": {
+    "type": "git",
+    "url": "git+https://github.com/JavierRizzoA/ristretto.git"
+  },
+  "author": "Javier Rizzo",
+  "licence": "MIT",
+  "bugs": {
+    "url": "https://github.com/JavierRizzoA/ristretto/issues"
+  },
+  "homepage": "https://github.com/JavierRizzoA/ristretto#readme"
+}

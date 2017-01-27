@@ -1,0 +1,52 @@
+{{!< default}}
+
+<main role="main">
+<article class="{{post_class}}">
+  {{#post}}
+    <header>
+      <div class="insert-ad"></div>
+      <h2>{{title}}</h2>
+      <section>
+        <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="YYYY-MM-DD"}}</time>
+      </section>
+    </header>
+    <section>
+      {{content}}
+    </section>
+    <footer>
+      <section>
+        {{tags prefix="Tagged "}}
+      </section>
+      <section class="share">
+        <h4>Share this post</h4>
+        <a href="https://twitter.com/share?text={{encode title}}&amp;url={{url absolute="true"}}"
+                                                                               onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+          <i class="fa fa-2x fa-twitter" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
+                                                                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+          <i class="fa fa-2x fa-facebook-official" aria-hidden="true"></i>
+        </a>
+        <a href="https://plus.google.com/share?url={{url absolute="true"}}"
+                                                         onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+          <i class="fa fa-2x fa-google-plus" aria-hidden="true"></i>
+        </a>
+      </section>	
+    </footer>
+  {{/post}}
+  <div id="disqus_thread"></div>
+  <script>
+
+if(disqus_user) {
+  (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = '//' + disqus_user + '.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+}
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</article>
+</main>
