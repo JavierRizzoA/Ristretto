@@ -144,3 +144,8 @@ blockquote {
 time {
   font-size: 0.7em;
 }
+
+.insert-ad {
+  max-width: 100%;
+  overflow: hidden;
+}
